@@ -257,6 +257,7 @@ img, canvas {
   z-index: 20;
   background: var(--bg);
   border-bottom: 1px solid var(--border);
+  padding: 10px 0;
 }
 
 .header-inner {
@@ -1593,7 +1594,7 @@ dd {
 
 @media (max-width: 900px) {
   .header-inner {
-    min-height: 72px;
+    min-height: unset;
     flex-wrap: wrap;
     gap: 0;
   }
@@ -1995,7 +1996,7 @@ dd {
   }
   .js-enabled .main-nav.is-open {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 5px 20px;
   }
 }
