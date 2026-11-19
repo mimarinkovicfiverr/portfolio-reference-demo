@@ -1,0 +1,15 @@
+# Editor / OS files (the project has no build step or package manager).
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log
+# Never publish secrets, browser profiles or local QA artifacts.
+.env
+.env.*
+*.pem
+*.key
+.qa-profile/
+qa/artifacts/
+__pycache__/

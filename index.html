@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A fictional front-end developer portfolio. An educational reference built with HTML, CSS and JavaScript.">
+    <meta name="theme-color" content="#0d1623">
+    <title>Alex Morgan — Front-end Developer · Reference Portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230d1623'/%3E%3Ctext x='10' y='44' font-size='36' font-family='monospace' fill='%238ed7c5'%3Eam%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home"><span data-content="brand">am</span><span class="brand-dot">.</span><span class="sr-only"> Portfolio home</span></a>
+        <button id="menu-toggle" class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false"><span id="menu-label">Open menu</span><span class="menu-lines" aria-hidden="true"></span></button>
+        <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+          <a href="#home" aria-current="location">Home</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a class="nav-contact" href="#contact">Let’s talk</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <section id="home" class="hero container" aria-labelledby="hero-title">
+        <div class="hero-masthead">
+          <p class="eyebrow" data-content="hero.eyebrow">Independent learning / Front-end development</p>
+          <p class="reference-note" data-content="referenceNote">Fictional portfolio · Built as a learning reference</p>
+        </div>
+        <div class="hero-display">
+          <h1 id="hero-title"><span class="sr-only">The portfolio of </span><span data-content="name">Alex Morgan</span><span class="accent">.</span></h1>
+          <!-- Architectural arch study: decorative paths, no editable copy. -->
+          <svg class="hero-architecture" viewBox="0 0 320 280" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 258H304M48 20V268M280 20V268M20 66H304" fill="none" stroke="#37565b" stroke-width="1"/>
+            <path d="M72 248V140a104 104 0 0 1 208 0v108" fill="none" stroke="#345b61" stroke-width="2"/>
+            <path d="M42 248V140a104 104 0 0 1 208 0v108h-40V140a64 64 0 0 0-128 0v108Z" fill="#367976"/>
+            <path d="M42 248V140a104 104 0 0 1 208 0v108M55 248V140a91 91 0 0 1 182 0v108M69 248V140a77 77 0 0 1 154 0v108" fill="none" stroke="#a4e4cd" stroke-width="2"/>
+            <path d="M97 248V142a49 49 0 0 1 98 0v106" fill="none" stroke="#7ab5af" stroke-width="1"/>
+            <path d="M115 248V144a31 31 0 0 1 62 0v104" fill="none" stroke="#37565b" stroke-width="1"/>
+            <path d="M28 248h240l30-30H268M250 140l30-12M250 248l30-30M146 36l30-12" fill="none" stroke="#8ed7c5" stroke-width="1.5"/>
+            <path d="M40 62v8m8-12v16m228-12v8M142 254v8m8-12v16M276 254v8" stroke="#8ed7c5" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="hero-summary">
+          <p class="hero-title-line" data-content="hero.title">Building for the browser.</p>
+          <div class="hero-copy">
+            <p class="hero-role" data-content="hero.role">Junior front-end developer</p>
+            <p class="hero-intro" data-content="hero.intro">An example portfolio exploring responsive layouts, accessible interactions and practical JavaScript. All work and background shown here are fictional.</p>
+            <div class="button-row">
+              <a class="button button-primary" href="#projects" data-content="hero.primaryCta">View project studies</a>
+              <a class="button button-secondary" href="#contact" data-content="hero.secondaryCta">Contact & demo form</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-bottom">
+          <p class="small-label" data-content="hero.notesHeading">What I practice</p>
+          <dl id="hero-notes" class="hero-notes"></dl>
+          <a href="#about">Read the profile</a>
+        </div>
+      </section>
+      <section id="about" class="section about-section" aria-labelledby="about-title">
+        <div class="container split-layout reveal">
+          <div>
+            <p class="section-label">Profile</p>
+            <h2 id="about-title" data-content="about.heading">A little background.</h2>
+          </div>
+          <div class="about-body">
+            <p class="lead" data-content="about.lead"></p>
+            <div id="about-paragraphs"></div>
+            <dl id="about-facts" class="facts"></dl>
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="section container" aria-labelledby="experience-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-label">Sample CV / fictional positions</p>
+            <h2 id="experience-title" data-content="experienceHeading">Experience</h2>
+          </div>
+          <p class="section-aside" data-content="experienceNote">Sample roles and responsibilities. Fictional employers throughout.</p>
+        </div>
+        <ol id="experience-list" class="timeline reveal"></ol>
+      </section>
+      <section id="education" class="section education-section" aria-labelledby="education-title">
+        <div class="container reveal">
+          <div class="section-heading">
+            <div>
+              <h2 id="education-title" data-content="educationHeading">Education & learning</h2>
+            </div>
+            <p class="section-aside" data-content="educationNote">Fictional qualifications and courses.</p>
+          </div>
+          <div class="education-layout">
+            <div id="education-list"></div>
+            <div class="certification-column">
+              <h3 data-content="certificationsHeading">Certifications & learning</h3>
+              <ul id="certification-list" class="certification-list"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="section container" aria-labelledby="skills-title">
+        <div class="section-heading reveal">
+          <div>
+            <h2 id="skills-title" data-content="skillsHeading">Skills & working methods</h2>
+          </div>
+          <p class="section-aside" data-content="skillsNote">A practical toolkit for the sample work below.</p>
+        </div>
+        <div id="skills-list" class="skills-grid reveal"></div>
+        <div class="chart-layout reveal">
+          <div class="chart-copy">
+            <span class="small-label">PROJECT INVENTORY</span>
+            <h3 data-content="chart.heading">Technology use in the sample work</h3>
+            <p data-content="chart.description"></p>
+            <p class="disclosure">Illustrative data · Counts sample projects by technology. A project can use more than one technology.</p>
+          </div>
+          <div class="chart-panel">
+            <div id="chart-wrapper" class="chart-wrapper">
+              <canvas id="technology-chart" role="img" aria-label="Technology use across the fictional sample projects. Exact values appear in the adjacent table."></canvas>
+            </div>
+            <p id="chart-status" class="small-text" role="status"></p>
+            <details class="chart-data">
+              <summary>View the data as a table</summary>
+              <table>
+                <caption>Illustrative technology use in sample projects</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Technology</th>
+                    <th scope="col">Projects</th>
+                  </tr>
+                </thead>
+                <tbody id="chart-table"></tbody>
+              </table>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="section projects-section" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="section-label">Portfolio / fictional concepts</p>
+              <h2 id="projects-title" data-content="projectsHeading">Selected project studies</h2>
+            </div>
+            <p class="section-aside"><span data-content="projectsIntro">Three approaches to layout and interaction.</span><br>Illustrative previews, not live applications.</p>
+          </div>
+          <div id="project-filters" class="project-filters" role="group" aria-label="Filter sample projects"></div>
+          <p id="project-status" class="sr-only" role="status"></p>
+          <div id="project-grid" class="project-grid"></div>
+          <p id="project-empty" class="empty-state" hidden>No sample projects match this filter. Choose All to see every project.</p>
+          <div class="api-demo reveal">
+            <div class="api-heading">
+              <div>
+                <p class="section-label">Separate public API demonstration</p>
+                <h3 id="api-title">From GitHub, not this portfolio.</h3>
+                <p id="api-description">A separate, read-only GitHub API demonstration. These repositories are not my work.</p>
+              </div>
+              <button id="api-refresh" class="button button-secondary" type="button">Refresh repositories</button>
+            </div>
+            <p id="api-status" class="api-status" role="status"></p>
+            <div id="repository-list" class="repository-grid" aria-busy="false"></div>
+            <p class="small-text">Public data only. No sign-in or API key. Demo fallback is clearly labeled when the live request is unavailable.</p>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section container" aria-labelledby="contact-title">
+        <div class="contact-layout reveal">
+          <div class="contact-copy">
+            <p class="section-label">Example details / practice form</p>
+            <h2 id="contact-title" data-content="contact.heading">Contact</h2>
+            <p class="lead" data-content="contact.intro"></p>
+            <dl id="contact-details" class="contact-details"></dl>
+            <p class="disclosure">All contact details are fictional placeholders.</p>
+          </div>
+          <form id="contact-form" class="contact-form" novalidate aria-describedby="form-disclosure">
+            <p id="form-disclosure" class="form-notice"><strong>Demo only. No message is sent.</strong><br>Messages are not delivered or saved. Use fictional details; don’t enter personal or sensitive information.</p>
+            <div class="form-field">
+              <label for="contact-name">Name <span>(required)</span></label>
+              <input id="contact-name" name="name" type="text" autocomplete="off" maxlength="80" required aria-describedby="name-error">
+              <p id="name-error" class="field-error"></p>
+            </div>
+            <div class="form-field">
+              <label for="contact-email">Email <span>(required)</span></label>
+              <input id="contact-email" name="email" type="email" autocomplete="off" maxlength="254" required aria-describedby="email-error">
+              <p id="email-error" class="field-error"></p>
+            </div>
+            <div class="form-field">
+              <label for="contact-message">Message <span>(required, 20–2000 characters)</span></label>
+              <textarea id="contact-message" name="message" rows="5" minlength="20" maxlength="2000" required aria-describedby="message-error"></textarea>
+              <p id="message-error" class="field-error"></p>
+            </div>
+            <button class="button button-primary" type="submit" disabled>Validate demo message</button>
+            <p id="form-status" class="form-status" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand" href="#home"><span data-content="brand">am</span><span class="brand-dot">.</span><span class="sr-only"> Back to home</span></a>
+        <p><span data-content="footer">A portfolio reference in HTML, CSS & JavaScript.</span><br><span class="small-text">Educational reference · Fictional identity and work</span></p>
+        <a href="#home">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </footer>
+    <noscript>
+      <div class="noscript-note">This reference uses JavaScript modules for editable content and interactive features. Enable JavaScript and open the site through a local HTTP server to see the complete portfolio.</div>
+    </noscript>
+  </body>
+</html>
